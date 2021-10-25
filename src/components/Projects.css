@@ -1,0 +1,119 @@
+.typewriter {
+    /*This part is important for centering*/
+    display: inline-block;
+    justify-content: center;
+}
+
+#projects {
+    width: 10ch ;
+    animation: typing 1s steps(10), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid orange;
+    font-family: monospace;
+    font-size: 5em;
+    margin: 0 auto;
+}
+
+#projects-dot {
+    color: red;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+#projects-box {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    
+}
+
+.project {
+    max-width: 700px;
+}
+
+
+img {
+    transition: width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 10px 10px rgb(174, 172, 172);
+    
+    
+}
+
+img:hover {
+    
+    opacity: 0.7;
+    transition: width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
+    width: 550px;
+    height: 275px;
+}
+
+.project-title {
+    margin-bottom: 5px;
+    bottom: 200px;
+
+
+}
+
+.project-info {
+    width: 500px;
+    text-align: left;
+    text-justify: inter-word;
+}
+
+.technology-span {
+    font-weight: bold;
+}
+.tech-list {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-box{
+    animation:2s ease 0s normal forwards 1 fadein;
+    -webkit-animation:3s ease 0s normal forwards 1 fadein;
+    opacity:1
+    }
+    
+    @keyframes fadein{
+        0%{opacity:0}
+        80%{opacity:0}
+        100%{opacity:1}
+    }
+    
+    @-webkit-keyframes fadein{
+        0%{opacity:0}
+        80%{opacity:0}
+        100%{opacity:1}
+    }
+
+@media screen  and (max-width: 1000px) {
+    #projects-box {
+        display: inline-block;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .project {
+        margin: 50px auto;
+    }
+}

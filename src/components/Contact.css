@@ -1,0 +1,53 @@
+#contact-box {
+    text-align: center;
+    margin: auto auto;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.typewriter {
+    /*This part is important for centering*/
+    display: inline-block;
+    justify-content: center;
+    
+}
+
+#contact {
+    width: 11ch ;
+    animation: typing 1s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid orange;
+    font-family: monospace;
+    font-size: 5em;
+    margin: 0 auto;
+}
+
+li {
+    line-height: 2em;
+}
+
+#contact-dot {
+    color: red;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+#contact-box{
+    animation:2s ease 0s normal forwards 1 fadein;
+    -webkit-animation:2s ease 0s normal forwards 1 fadein;
+    opacity:1
+    }

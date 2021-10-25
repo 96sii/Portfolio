@@ -1,0 +1,71 @@
+#hello-box {
+    text-align: center;
+}
+
+#hello-dot {
+    color: red;
+}
+
+.typewriter {
+    display: inline-block;
+    justify-content: center;
+}
+
+#hello {
+    width: 6ch ;
+    animation: typing 1s steps(6), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid orange;
+    font-family: monospace;
+    font-size: 5em;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+#profile-box{
+    transition: 0.5s ease-in-out;
+    margin: 40px auto;
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: 10px 10px rgb(174, 172, 172);
+
+
+    animation:2s ease 0s normal forwards 1 fadein;
+    -webkit-animation:2s ease 0s normal forwards 1 fadein;
+    opacity:1
+    }
+    
+    @keyframes fadein{
+        0%{opacity:0}
+        80%{opacity:0}
+        100%{opacity:1}
+    }
+    
+    @-webkit-keyframes fadein{
+        0%{opacity:0}
+        80%{opacity:0}
+        100%{opacity:1}
+    }
+
+    #profile-box:hover {
+        transition: width 0.5s ease-in-out;
+        width:90%;
+    }
+
+#profile {
+    font-size: 2em;
+}
+
