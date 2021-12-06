@@ -1,14 +1,22 @@
-import react from 'react';
 import {Link} from 'react-router-dom';
+import {fallDown as Menu} from 'react-burger-menu';
 import './NavBar.css';
 
-const NavBar = () => {
+
+const NavBar = ({isOpen, handleNavBarClick, handleOnOpen, handleOnClose}) => {
+
     return(
-        <ul id="nav-bar">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-        </ul>
+            <Menu 
+            isOpen={isOpen}
+            onOpen={handleOnOpen}
+            onClose={handleOnClose}
+            width='200px' 
+            heigth='100%'
+            id="nav-bar" >
+                <Link onClick={handleNavBarClick} className="nav-link" to="/">Home</Link>
+                <Link onClick={handleNavBarClick}  className="nav-link" to="/projects">Projects</Link>
+                <Link onClick={handleNavBarClick}  className="nav-link" to="/contact">Contact</Link>
+            </Menu>
     )
 }
 

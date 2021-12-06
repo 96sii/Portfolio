@@ -1,3 +1,7 @@
 body {
     background-color: rgb(207, 203, 203);
+    font-family: monospace;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }

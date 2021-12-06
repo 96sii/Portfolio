@@ -1,0 +1,21 @@
+#links-box {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5em;
+}
+
+.icon:hover {
+    color: red;
+}
+
+@media screen  and (max-width:500px){
+    #links-box {
+        position: fixed;
+        right: 2.5px;
+        top: 10px;
+        z-index: 1;
+        display: grid;
+        margin: 0 auto;
+    }
+}

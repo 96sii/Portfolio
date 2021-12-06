@@ -1,4 +1,65 @@
+#nav-bar{
+    display: flex;
+}
+
 #nav-bar > li{
+    
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+a {
+    color: white;
     text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 25px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-burger-bars-hover {
+    background: red;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background: #ffffff;
+}
+
+.bm-menu {
+    background: orange;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+.nav-link {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+@media screen and (max-width: 768px) {
     
 }

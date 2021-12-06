@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+#project-container {
+    text-align: center;
+    height: 100%;
+}
+
 #projects {
     width: 10ch ;
     animation: typing 1s steps(10), blink .5s step-end infinite alternate;
@@ -13,6 +18,7 @@
     font-family: monospace;
     font-size: 5em;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
 #projects-dot {
@@ -33,19 +39,16 @@
 
 #projects-box {
     text-align: center;
-    height: 100%;
+    height: 1200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px;
-    
-}
 
-.project {
-    max-width: 700px;
 }
 
 
-img {
+.project-img {
     opacity: 0.8;
     transition: width 0.5s ease-in-out,
     height 0.5s ease-in-out,
@@ -53,37 +56,33 @@ img {
     opacity 0.5s ease-in-out;
     width: 500px;
     height: 250px;
-    overflow: hidden;
     border: 1px solid black;
     box-shadow: 10px 10px rgb(138, 136, 136);
-    
-    
 }
 
-img:hover {
-    
-    transition: width 0.5s ease-in-out,
-    height 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out
-    opacity 0.5s ease-in-out;
-    width: 550px;
-    height: 275px;
-    box-shadow: 15px 15px rgb(174, 172, 172);
+.project-img:hover{
     opacity: 1;
-
-}
-
-.project-title {
-    margin-bottom: 5px;
-    bottom: 200px;
-
-
 }
 
 .project-info {
     width: 500px;
     text-align: left;
+    font-size: 1.2em;
+    margin: 20px 5px 0 5px;
     text-justify: inter-word;
+    animation:0.7s ease 0s normal forwards 1 fadein;
+    -webkit-animation:0.7s ease 0s normal forwards 1 fadein;
+    opacity:1;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.project-title {
+    margin-bottom: 5px;
+    bottom: 200px;
 }
 
 .technology-span {
@@ -113,6 +112,12 @@ img:hover {
         100%{opacity:1}
     }
 
+.icon{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
 @media screen  and (max-width: 1000px) {
     #projects-box {
         display: inline-block;
@@ -122,5 +127,26 @@ img:hover {
 
     .project {
         margin: 50px auto;
+        max-width: 300px;
+    }
+
+    .project-anchor {
+        width: 300px;
+
+    }
+
+    #projects {
+        font-size: 3em;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+        box-shadow: 0px 0px rgb(138, 136, 136);
+    }
+
+    .project-info {
+        width: 100%;
     }
 }

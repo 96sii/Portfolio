@@ -1,5 +1,7 @@
 import React from 'react';
 import './Hello.css';
+import me from '../Me.jpeg'
+
 
 const Hello = () => {
 
@@ -12,6 +14,7 @@ const Hello = () => {
             <div id="profile-box">
                 <p id="profile">My name is is Simon and I'm a web developer based in Edinburgh, Scotland.</p>
             </div>
+                <img id="img-me" src={me}/>
         </div>
     )
 }

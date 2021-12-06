@@ -1,3 +1,11 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
+
 #hello-box {
     text-align: center;
 }
@@ -17,9 +25,9 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid orange;
-    font-family: monospace;
     font-size: 5em;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 @keyframes typing {
@@ -39,7 +47,7 @@
     transition: 0.5s ease-in-out;
     background-color: rgb(228, 225, 225);
     margin: 40px auto;
-    width: 80%;
+    width: 85%;
     border: 1px solid black;
     box-shadow: 10px 10px rgb(143, 142, 142);
 
@@ -61,12 +69,53 @@
         100%{opacity:1}
     }
 
-    #profile-box:hover {
-        transition: width 0.5s ease-in-out;
-        width:90%;
-    }
+#profile-box:hover {
+    transition: width 0.5s ease-in-out;
+    width:90%;
+}
 
 #profile {
     font-size: 2em;
+}
+
+#img-me {   
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+
+    animation:2s ease 0s normal forwards 1 fadein;
+    -webkit-animation:4s ease 0s normal forwards 1 fadein;
+    opacity:1
+
+    
+
+
+}
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+@media screen and (max-width: 800px){
+    h1 {
+        font-size: 0.2em;
+    }
+
+    #profile {
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+
+    #hello-box {
+        max-width: 100%;
+    }
+
+    #hello {
+        font-size: 3em;
+    }
 }
 
